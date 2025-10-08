@@ -17,7 +17,7 @@ on:
 jobs:
   build:
 
-    runs-on: RAMESH-PC
+    runs-on: win-11
 
     steps:
     - name: checkout the code
