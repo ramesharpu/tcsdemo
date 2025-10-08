@@ -17,4 +17,9 @@ public class TcsdemoApplication {
 	public String home() {
 		return "<h1>Welcome to TCS Demo Application</h1>";
 	}
+
+	@GetMapping("/greeting")
+	public String greeting() {
+		return "<h1>This is from the greetings page</h1>";
+	}
 }
