@@ -43,7 +43,13 @@ jobs:
       run: |
         docker build -t ramesharpu/my-tcs-app .
 
+    - name: Push the image to docker hub
+      run: |
+        docker push ramesharpu/mytcs-app
+
     - name: Deploy the docker image
       run: |
         docker run --name demo-container -d -p 9999:8080 ramesharpu/my-tcs-app
+
+    
       
