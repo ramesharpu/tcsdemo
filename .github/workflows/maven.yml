@@ -52,6 +52,7 @@ jobs:
 
     - name: Push the image to docker hub
       run: |
+        echo "$DOCKERHUB_TOKEN" | docker login -u ramesharpu --password-stdin 
         docker push ramesharpu/mytcs-app
 
     - name: Deploy the docker image
